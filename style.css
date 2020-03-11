@@ -31,7 +31,7 @@ header img{
 }
     
 h2{
-        font-size: 1.2em;
+    font-size: 1.2em;
     }
 }
 
@@ -77,13 +77,22 @@ nav{
     display: block;
     list-style-type: none;
     border: none;
-    width: 100%;
+    width: 250px;
     background-color: aqua;
     padding-top: 1em;
     padding-bottom: 1em;
-    position:absolute;
         
 }
+
+ .main-menu form{
+            padding:0;
+        }
+
+        .main-menu input{
+            width:auto;
+
+        }
+
 @media(min-width:768px){
     
     nav{
@@ -183,6 +192,33 @@ p{
 h3{
     margin-top:1em;
 }
+
+.search{
+    height: 36px;
+    padding-top: 6px;
+    border: solid 1px #333;
+    background-color: aqua;
+    width: 250px;
+}
+    
+ .search input{
+     border: solid 1 px #333;
+     line-height: 2em;
+     margin-left: 1em;
+     padding-top: 3px;
+     padding-bottom: 3px;
+     padding-left: 5px;
+     padding-right: 5px;
+ }
+
+form {
+    height: 36px;
+    padding-top: 6px;
+    border: solid 1px aqua;
+    background-color: #333;
+    width: 250px;
+}
+
 /* ***** Desktop styles  **** */
 
 @media(min-width: 768px){
@@ -205,7 +241,15 @@ h3{
         position:static;
         width:100%;
         text-align: right;
+        display: flex;
+        flex-direction: row;
         }
+    
+    .search{
+        height: 100%;
+        border: none;
+        background-color: transparent;
+        width: 100%
 
     .main-menu li{
         height:auto;
@@ -221,44 +265,6 @@ h3{
         margin-right:0;
         text-align: center;
         }
-
-
-        .main-menu ul{
-            float:left;
-        }
-
-
-        .main-menu form{
-            padding:0;
-            float:right;
-        }
-
-        .main-menu input{
-            width:auto;
-
-        }
-
-        .main-menu button{
-            width:auto;
-            float: none;
-        }
-
-        .main-menu li ul{
-            display:none;
-        }
-
-        .main-menu li li{
-            display:block;
-            border: solid 1px #ccc;
-            padding: 5px;
-            background-color: #fff;
-        }
-
-        .main-menu li:hover ul{
-            display:block;
-            position:absolute;
-        }
-
 
 
 
